@@ -28,6 +28,21 @@
 
 /*Color depth: 8 (A8), 16 (RGB565), 24 (RGB888), 32 (XRGB8888)*/
 #define LV_COLOR_DEPTH 16
+/*Swap the 2 bytes of RGB565 color. Useful if the display has an 8-bit interface (e.g. SPI)*/
+#define LV_COLOR_16_SWAP 1
+/*Use a custom tick source that tells the elapsed time in milliseconds and enables this code.*/
+/*It removes the need to manually update the tick with `lv_tick_inc()`)*/
+#define LV_TICK_CUSTOM 1
+#define LV_USE_PERF_MONITOR 1
+#define LV_USE_MEM_MONITOR 1
+#define LV_USE_ARC        1
+#define LV_USE_BAR        1
+#define LV_USE_BTN        1
+#define LV_USE_BTNMATRIX  1
+#define LV_FONT_MONTSERRAT_22 1
+/*Enable the log module*/
+#define LV_USE_LOG 1
+
 
 /*=========================
    STDLIB WRAPPER SETTINGS
